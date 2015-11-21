@@ -29,7 +29,7 @@ public class Inventory {
 		for(Guitar gt : guitars){
 			String builder = searchGuitar.getBuilder();
 			if((builder != null) && (!builder.equals("")) && (!builder.equals(gt.getBuilder()))){
-				
+				continue;
 			}
 		}
 		return null;
