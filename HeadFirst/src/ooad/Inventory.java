@@ -31,6 +31,26 @@ public class Inventory {
 			if((builder != null) && (!builder.equals("")) && (!builder.equals(gt.getBuilder()))){
 				continue;
 			}
+			
+			String model = searchGuitar.getModel();
+			if((model != null) && (!model.equals("")) && (!model.equals(gt.getModel()))){
+				continue;
+			}
+			
+			String type = searchGuitar.getType();
+			if((type != null) && (!type.equals("")) && (!type.equals(gt.getType()))){
+				continue;
+			}
+			
+			String backWood = searchGuitar.getBackWood();
+			if((backWood != null) && (!backWood.equals("")) && (!backWood.equals(gt.getBackWood()))){
+				continue;
+			}
+			
+			String topWood = searchGuitar.getTopWood();
+			if((topWood != null) && (!topWood.equals("")) && (!topWood.equals(gt.getTopWood()))){
+				continue;
+			}
 		}
 		return null;
 	}
